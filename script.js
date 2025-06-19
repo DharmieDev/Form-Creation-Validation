@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById ("registration-form");
     const feedbackDiv = document.getElementById("form-feedback")
     
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     messages.push("Email must contain '@' and '.'");
                 };
             };
-            
+
             if (password.length >= 8) {
                 if (!isValid) {
                     messages.push("Password must be at least 8 characters long.");
